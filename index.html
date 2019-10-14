@@ -3,14 +3,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
 
     <title>Wedding</title>
 </head>
 <body>
-    <h1>Christina and Ryman's Wedding</h1>
+    <div class="container" id="bg-layer-1">
+        <!-- <img src="http://conversantm.com/VfJfnv/jXk5QKzXLo.png" alt=""> -->
+        <div class="row">
+            <div class="col-1 col-sm-1 col-md-2 col-lg-2" id="l_and_r_gutter">
+              <!-- left gutter -->
+            </div>
+            <div class="col-10 col-sm-10 col-md-8 col-lg-8">
+              <!-- main content -->
+
+                
+                <div class="blow-right" id="flower-image-1">
+                <div class="fade-in two">    
+                    <img src="/images/flowers-2.png" alt="flower">
+                </div>
+                </div>  
+                
+                <div class="fade-in one" id="invite-text-block">
+                    <h1>Christina & Ryman's Wedding</h1>
+
+                    <p>We would love to invite you to join us for a day filled with love and laughter.</p>
+
+                    <p>The ceremony and after-party will take place on the afternoon of the 29th of February, 2020.</p>
+
+                    <p>The formalities will begin at 4pm sharp, with the festival commencing shortly after</p>
+
+                    <p>If you'll be attending, please RSVP by December 1st.</p>
+
+                    <p>As we'll have limited ability to transport goods, please refrain from bulky presents.</p>
+                </div>
+                
+                <div class="fade-in three" id="flower-image-2">
+                        <img src="/images/flowers-1.png" alt="flower">
+                </div>
+                
+                <div id="rsvp-section">
+                    <a href="#rsvp-form"><button type="button" class="btn btn-light" onclick="toggleRSVP()">RSVP</button></a>
+                </div>
+                <div id="rsvp-form" style="display: none;">
+                        <form>
+                                <div class="form-group row">
+                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                  <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                  </div>
+                                </div>
+                                <fieldset class="form-group">
+                                  <div class="row">
+                                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                    <div class="col-sm-10">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                          First radio
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                          Second radio
+                                        </label>
+                                      </div>
+                                      <div class="form-check disabled">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                                        <label class="form-check-label" for="gridRadios3">
+                                          Third disabled radio
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                                <div class="form-group row">
+                                  <div class="col-sm-2">Checkbox</div>
+                                  <div class="col-sm-10">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                      <label class="form-check-label" for="gridCheck1">
+                                        Example checkbox
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                  </div>
+                                </div>
+                              </form>
+                </div>
 
 
+             
+            </div>
+            <div class="col-1 col-sm-1 col-md-2 col-lg-2" id="l_and_r_gutter">
+              <!-- right gutter -->
+            </div>
+          </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

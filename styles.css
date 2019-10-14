@@ -1,3 +1,143 @@
-h1 {
-    color: blue;
+body {
+    background-color: #914642;
+    color: #ffffff;
 }
+
+/* #bg-layer-1 {
+    background-image: url('http://conversantm.com/VfJfnv/jXk5QKzXLo.png');
+    background-repeat: no-repeat;
+    background-position: right left;
+} */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+h1 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    padding-bottom: 50px;
+}
+
+p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#invite-text-block {
+    margin: 100px 0px;
+}
+
+#flower-image-1 {
+    position: fixed;
+    top:-30px;
+    left: -100px;
+    transform: rotate(20deg); 
+    z-index: 1;
+}
+
+/* #flower-image-1:hover {
+    position: absolute;
+    left: -120px;   
+} */
+
+#flower-image-2 {
+    position: fixed;
+    right: -50px;
+    bottom: -30px;
+    transform: rotate(110deg);
+    z-index: -1;
+}
+
+#rsvp-section {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#rsvp-form {
+    padding-bottom: 100px;
+}
+
+/* 
+#l_and_r_gutter {
+
+    background-color: cornflowerblue;
+}
+ */
+
+ /* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { 
+    from { 
+        opacity:0; 
+        /* transform: rotate(0deg); */
+    } 
+    to 
+    { 
+        opacity:1; 
+    } 
+}
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
+  
+  .fade-in.two {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    animation-delay: 1.2s;
+  }
+  
+  .fade-in.three {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+  }
+  @-webkit-keyframes blowRight { from { transform: rotate(20deg); } to { transform: rotate(19deg); } }
+  @-moz-keyframes blowRight { from { transform: rotate(20deg); } to { transform: rotate(19deg); } }
+  @keyframes blowRight {
+      from {
+          transform: rotate(20deg);
+      }
+      to {
+          transform: rotate(19deg);
+      }
+  }
+
+  .blow-right {
+    -webkit-animation:blowRight ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:blowRight ease-in 1;
+    animation:blowRight ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.5s;
+    -moz-animation-duration:0.5s;
+    animation-duration:0.5s;
+
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  }
