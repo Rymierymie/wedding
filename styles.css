@@ -16,7 +16,7 @@ html {
 h1 {
     text-align: center;
     font-family: 'Amatic SC', cursive;
-    padding-bottom: 50px;
+    padding-top: 20vh;
 }
 
 p {
@@ -33,7 +33,7 @@ p {
 #flower-image-1 {
     position: fixed;
     top:-30px;
-    left: -100px;
+    left: -80px;
     transform: rotate(20deg); 
     z-index: 1;
 }
@@ -51,14 +51,45 @@ p {
     z-index: -1;
 }
 
+#page-header {
+    height:100vh;
+}
+
+ #scroll-button {
+    position: fixed;
+    right: 45vw;
+    top: 90vh;
+} 
+
+/* #scoll-button-div {
+    position: fixed;
+    right: 50vw;
+    top: 90vh;
+} */
+
+#invite-info {
+    height:100vh;
+}
+
 #rsvp-section {
     padding: 50px 0px;
     text-align: center;
+    height:100vh;
 }
 
 #rsvp-form {
     padding-bottom: 100px;
 }
+
+/* #flower-1 {
+    width: 170px;
+    opacity: 0.95;
+}
+
+#flower-2 {
+    width: 190px;
+    opacity: 0.95;
+} */
 
 /* 
 #l_and_r_gutter {
