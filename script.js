@@ -6,3 +6,14 @@ function toggleRSVP() {
       x.style.display = "none";
     }
   }
+
+
+
+$(document).ready(function(){
+  $(".btn_fade").click(function(){
+    $("#scroll-button").fadeOut();
+  });
+  $(".btn2").click(function(){
+    $("p").fadeIn();
+  });
+});

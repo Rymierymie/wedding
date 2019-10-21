@@ -52,7 +52,7 @@ p {
 }
 
 #page-header {
-    height:100vh;
+    height:90vh;
 }
 
  #scroll-button {
@@ -161,6 +161,37 @@ p {
     -webkit-animation:blowRight ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
     -moz-animation:blowRight ease-in 1;
     animation:blowRight ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.5s;
+    -moz-animation-duration:0.5s;
+    animation-duration:0.5s;
+
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  }
+
+
+
+  @-webkit-keyframes blowLeft { from { transform: rotate(110deg); } to { transform: rotate(111deg); } }
+  @-moz-keyframes blowLeft { from { transform: rotate(110deg); } to { transform: rotate(111deg); } }
+  @keyframes blowLeft {
+      from {
+          transform: rotate(110deg);
+      }
+      to {
+          transform: rotate(111deg);
+      }
+  }
+
+  .blow-left {
+    -webkit-animation:blowLeft ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:blowLeft ease-in 1;
+    animation:blowLeft ease-in 1;
 
     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
     -moz-animation-fill-mode:forwards;
