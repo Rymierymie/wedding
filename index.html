@@ -50,35 +50,49 @@
                     <p>If you'll be attending, please RSVP by December 1st.</p>
                     </div>
                 </div>
+                <div id="rsvp_form_div">
+                <a href="#rsvp-form"><button type="button" class="btn btn-light btn_fade_2" id="rsvp_button" >RSVP</button></a>
+                </div>  
                 <div class="blow-left" id="flower-image-2">
                 <div class="fade-in three" >
                         <img src="./images/flowers-1.png" alt="flower" id="flower-1">
                 </div>
                 </div>
                 <div id="rsvp-section">
-                    <a href="#rsvp-form"><button type="button" class="btn btn-light" onclick="toggleRSVP()">RSVP</button></a>
-                
-
-                <div id="rsvp-form" style="display: none; text-align: center;">
-                        <form target="_self" onsubmit="return postToGoogle();" action="">
-                                <div class="form-group row">
+                    <div id="rsvp-form" style="display: none;">
+                        <form target="_self" onsubmit="return postToGoogle();" action="" class="text-center">
+                                <div class="form-group row justify-content-center">
                                   <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="nameField" name="entry.871409549" placeholder="Text">
+                                    <input type="text" class="form-control" id="nameField" name="entry.871409549" placeholder="Names of attendees">
                                   </div>
                                 </div>
-                                <div class="form-group row">
+                                <div class="form-group row justify-content-center">
+                                        <div class="col-sm-10">
+                                        <input class="form-control" id="rsvpField" name="entry.456110644" placeholder="Can ya make it?!">   
+                                        <!-- <select class="form-control" id="rsvpField" name="entry.456110644">
+                                                <option>Yes, I'll be there!</option>
+                                                <option>Sadly, can't make it</option>
+                                        </select> -->
+                                        </div>
+                                </div>
+                                <div class="form-group row justify-content-center">
                                   <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="emailField" name="entry.456110644" placeholder="Text">
+                                    <input type="text" class="form-control" id="dietField" name="entry.409390195" placeholder="Any dietary requirements?">
                                   </div>
                                 </div>
-                                <div class="form-group row">
+                                <div class="form-group row justify-content-center">
+                                        <div class="col-sm-10">
+                                          <input type="text" class="form-control" id="songField" name="entry.2091612956" placeholder="A song you'd love to hear!">
+                                        </div>
+                                </div>
+                                <div class="form-group row justify-content-center">
                                   <div class="col-sm-10">
                                     <button onclick="window.location.href = 'https://media.giphy.com/media/k4drIzcE2mPWU/giphy.gif';" id="send" type="submit" name="attending" class="btn btn-light">Submit</button>
                                   </div>
                                 </div>
                               </form>
-                </div>
-                </div>
+            </div>
+        </div>
 
             </div>
             <div class="col-1 col-sm-1 col-md-2 col-lg-2" id="l_and_r_gutter">
@@ -99,7 +113,9 @@
     <script>
             function postToGoogle() {
                             var field1 = $("#nameField").val();
-                            var field2 = $("#emailField").val();
+                            var field2 = $("#dietField").val();
+                            var field3 = $("#rsvpField option:selected").text();
+                            var field4 = $("#songField").val();
                             /* var field3 = $("#mobField").val();
                             var field4 = $("#cinema option:selected").text(); */
                              
@@ -116,7 +132,7 @@
         
                             $.ajax({
                                 url: "https://docs.google.com/forms/d/e/1FAIpQLSffTUly9xvoLtDafZ0zr3YZJlkJpbnC6Nc51PvXoQDvm9pjEQ/formResponse?",
-                                data: {"entry.871409549": field1, "entry.456110644": field2},
+                                data: {"entry.871409549": field1, "entry.409390195": field2, "entry.456110644": field3, "entry.2091612956": field4},
                                 type: "POST",
                                 dataType: "xml",
                             });
