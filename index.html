@@ -34,11 +34,12 @@
                 </div>  
                 
                 <div class="fade-in one" id="invite-text-block">
-                    <div id="page-header">
+                    <div id="page-header" class="row justify-content-center">
                     <h1>Christina & Ryman's Wedding</h1>
                     
-                    <a href="#invite-info"><i class="fa fa-chevron-down btn_fade" id="scroll-button" style="font-size:30px; color:#ffffff;"></i></a>
+                    <!-- <a href="#invite-info"><i class="fa fa-chevron-down btn_fade elementToFadeInAndOut fader" id="scroll-button" style="font-size:30px; color:#ffffff;"></i></a> -->
                     </div>
+
                     <div id="invite-info">
                     <p style="height: 22vh;"></p>   
                     <p>We would love to invite you to join us for a day filled with love and laughter.</p>
@@ -63,12 +64,12 @@
                         <form target="_self" onsubmit="return postToGoogle();" action="" class="text-center">
                                 <div class="form-group row justify-content-center">
                                   <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="nameField" name="entry.871409549" placeholder="Names of attendees">
+                                    <input type="text" class="form-control input" id="nameField" name="entry.871409549" placeholder="Names of attendees">
                                   </div>
                                 </div>
                                 <div class="form-group row justify-content-center">
                                         <div class="col-sm-10">
-                                        <input class="form-control" id="rsvpField" name="entry.456110644" placeholder="Can ya make it?!">   
+                                        <input class="form-control input" id="rsvpField" name="entry.456110644" placeholder="Can ya make it?!">   
                                         <!-- <select class="form-control" id="rsvpField" name="entry.456110644">
                                                 <option>Yes, I'll be there!</option>
                                                 <option>Sadly, can't make it</option>
@@ -77,12 +78,12 @@
                                 </div>
                                 <div class="form-group row justify-content-center">
                                   <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="dietField" name="entry.409390195" placeholder="Any dietary requirements?">
+                                    <input type="text" class="form-control input" id="dietField" name="entry.409390195" placeholder="Any dietary requirements?">
                                   </div>
                                 </div>
                                 <div class="form-group row justify-content-center">
                                         <div class="col-sm-10">
-                                          <input type="text" class="form-control" id="songField" name="entry.2091612956" placeholder="A song you'd love to hear!">
+                                          <input type="text" class="form-control input" id="songField" name="entry.2091612956" placeholder="A song you'd love to hear!">
                                         </div>
                                 </div>
                                 <div class="form-group row justify-content-center">
@@ -90,15 +91,16 @@
                                     <button onclick="window.location.href = 'https://media.giphy.com/media/k4drIzcE2mPWU/giphy.gif';" id="send" type="submit" name="attending" class="btn btn-light">Submit</button>
                                   </div>
                                 </div>
-                              </form>
+                        </form>
+                    </div>
+                </div>
+            <div>
+                <div class="col-1 col-sm-1 col-md-2 col-lg-2" id="l_and_r_gutter">
+                <!-- right gutter -->
+                </div>
             </div>
         </div>
-
-            </div>
-            <div class="col-1 col-sm-1 col-md-2 col-lg-2" id="l_and_r_gutter">
-              <!-- right gutter -->
-            </div>
-          </div>
+        </div>
     </div>
     
     
@@ -139,6 +141,21 @@
                             /* Stops the page from refreshing */
                             return false;
                         }
+
+                        $(window).scroll(function() {
+
+                            if ($(this).scrollTop()>10)
+                            {
+                                $('.fader').fadeOut();
+                            }
+                            else
+                            {
+                            $('.fader').fadeIn();
+                            }
+                            });     
+                            
+
+
             </script>    
 
 </body>
