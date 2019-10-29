@@ -1,7 +1,9 @@
 body {
     background-color: #914642;
     color: #ffffff;
+    overflow: hidden;
 }
+
 
 /* #bg-layer-1 {
     background-image: url('http://conversantm.com/VfJfnv/jXk5QKzXLo.png');
@@ -53,7 +55,7 @@ p {
 }
 
 #page-header {
-    height:40vh;
+    height:20vh;
     background: #914642;
 }
 
@@ -74,7 +76,7 @@ p {
 } */
 
 #invite-info {
-    height:90vh;
+    padding-bottom: 10vh;
 }
 
 #rsvp-section {
@@ -112,10 +114,20 @@ p {
      margin-bottom: 5vh;
      background-color: #f8f9fa66 !important;
      border: 0px !important;
+     font-family: 'Assistant', sans-serif !important;
+     font-weight: 100 !important;
+     font-size: 1.2rem !important;
  }
 
  .input:focus {
     box-shadow: 0 0 5px #e7bcba;
+}
+
+button {
+     font-family: 'Assistant', sans-serif !important;
+     font-weight: 100 !important;
+     font-size: 1.2rem !important;
+     background-color: #f8f9fae0 !important;
 }
 
 #rsvp-form {
