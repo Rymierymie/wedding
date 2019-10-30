@@ -59,20 +59,25 @@ p {
     background: #914642;
 }
 
- #scroll-button {
+/*  #scroll-button {
     position: fixed;
     right: 45vw;
     top: 90vh;
-} 
+}  */
 
 #rsvp_form_div {
     text-align: center;
+    height: 10vh;
 }
 
 /* #scoll-button-div {
     position: fixed;
     right: 50vw;
     top: 90vh;
+} */
+
+/* #rsvp_button {
+    position: fixed;
 } */
 
 #invite-info {
@@ -130,9 +135,14 @@ button {
      background-color: #f8f9fae0 !important;
 }
 
+#rsvp_button {
+    position: fixed !important;
+    text-align: center !important;
+    left: 43vw;
+}
+
 #rsvp-form {
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 115px;
 }
 
 .elementToFadeInAndOut {
