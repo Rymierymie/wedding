@@ -17,6 +17,11 @@
     <title>Wedding</title>
 </head>
 <body>
+    <nav class="navbar fixed-bottom navbar-light bg-light nav nav-fill fade-in two">
+        <a class="nav-item nav-link nav-1" href="#page-header">Invite</a>
+        <a class="nav-item nav-link" href="#rsvp-section">RSVP</a>
+        <!-- <a class="nav-item nav-link" href="#">Link</a> -->
+      </nav>
     <div class="container" id="bg-layer-1">
         <!-- <img src="http://conversantm.com/VfJfnv/jXk5QKzXLo.png" alt=""> -->
         <div class="row">
@@ -36,8 +41,6 @@
                 <div class="fade-in one" id="invite-text-block">
                     <div id="page-header" class="row justify-content-center">
                     <h1>Christina & Ryman's Wedding</h1>
-                    
-                    <!-- <a href="#invite-info"><i class="fa fa-chevron-down btn_fade elementToFadeInAndOut fader" id="scroll-button" style="font-size:30px; color:#ffffff;"></i></a> -->
                     </div>
 
                     <div id="invite-info">
@@ -47,22 +50,20 @@
                     <p>The ceremony and after-party will take place on the afternoon of the 29th of February, 2020.</p>
 
                     <p>The formalities will begin at 4pm sharp, with the festival commencing shortly after</p>
-
-                    <p>If you'll be attending, please RSVP by December 1st.</p>
                     </div>
                 </div>
-                <div class="col">
+<!--                 <div class="col">
                 <div id="rsvp_form_div" class="row justify-content-center">
                 <a href="#rsvp-form"><button type="button" class="btn btn-light btn_fade_2 fade-in two" id="rsvp_button" >RSVP</button></a>
                 </div> 
-                </div> 
+                </div>  -->
                 <div class="blow-left" id="flower-image-2">
                 <div class="fade-in three" >
                         <img src="./images/flowers-1.png" alt="flower" id="flower-1">
                 </div>
                 </div>
-                <div id="rsvp-section">
-                    <div id="rsvp-form" style="display: none;">
+                <div id="rsvp-section" class="anchor">
+                    <div id="rsvp-form">
                         <form target="_self" onsubmit="return postToGoogle();" action="" class="text-center">
                                 <div class="form-group row justify-content-center">
                                   <div class="col-sm-10">
@@ -92,6 +93,7 @@
                                   <div class="col-sm-10">
                                     <button onclick="window.location.href = 'https://media.giphy.com/media/k4drIzcE2mPWU/giphy.gif';" id="send" type="submit" name="attending" class="btn btn-light">Submit</button>
                                   </div>
+                                  <!-- <a href="#invite-info"><i class="fa fa-chevron-down btn_fade elementToFadeInAndOut fader" id="scroll-button" style="font-size:30px; color:#ffffff;"></i></a> -->
                                 </div>
                         </form>
                     </div>

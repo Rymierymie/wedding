@@ -18,7 +18,7 @@ html {
 h1 {
     text-align: center;
     font-family: 'Amatic SC', cursive;
-    padding-top: 5vh;
+    padding-top: 7vh;
     position: fixed;
 }
 
@@ -27,6 +27,29 @@ p {
     font-weight: 100;
     font-size: 1.2rem;
     text-align: center;
+}
+
+nav {
+    font-family: 'Assistant', sans-serif !important;
+    font-weight: 100 !important;
+    font-size: 1.2rem !important;
+    bottom: 3vh !important;
+    width: 60vw !important;
+    left: 20vw !important;
+    border-radius: 6px;
+    background:rgba(255,255,255, 0.6) !important;
+}
+
+.nav-link {
+    color: #914642;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+a.nav-1 {
+    border-right: 1px solid #914642 !important;
 }
 
 /* #invite-text-block {
@@ -38,7 +61,7 @@ p {
     top:-30px;
     left: -80px;
     transform: rotate(20deg); 
-    z-index: 1;
+    z-index: -1;
 }
 
 /* #flower-image-1:hover {
@@ -56,7 +79,6 @@ p {
 
 #page-header {
     height:20vh;
-    background: #914642;
 }
 
 /*  #scroll-button {
@@ -81,7 +103,8 @@ p {
 } */
 
 #invite-info {
-    padding-bottom: 10vh;
+    padding-bottom: 30vh;
+    padding-top:5vh;
 }
 
 #rsvp-section {
@@ -132,7 +155,9 @@ button {
      font-family: 'Assistant', sans-serif !important;
      font-weight: 100 !important;
      font-size: 1.2rem !important;
-     background-color: #f8f9fae0 !important;
+     color: #914642 !important;
+     background-color: rgba(255,255,255, 0.9) !important;
+     
 }
 
 #rsvp_button {
@@ -142,9 +167,16 @@ button {
 }
 
 #rsvp-form {
-    padding-top: 115px;
+    padding-top: 100px;
 }
 
+/* a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+ */
 .elementToFadeInAndOut {
     -webkit-animation: fadeinout 4s linear 1 forwards;
     animation: fadeinout 4s linear 1 forwards;
