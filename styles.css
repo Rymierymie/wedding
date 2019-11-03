@@ -22,6 +22,18 @@ h1 {
     position: fixed;
 }
 
+@media only screen and (min-width: 400px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        padding-top: 3vh;
+    }
+}
+
 p {
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
@@ -32,6 +44,7 @@ p {
 @media only screen and (min-width: 400px) {
     p {
         margin-bottom: 5vh;
+        font-size: 1.4rem;
       /* background-color: lightblue; */
     }
   }
@@ -43,13 +56,14 @@ nav {
     bottom: 3vh !important;
     width: 60vw !important;
     left: 20vw !important;
-    border-radius: 6px;
+    border-radius: 1px;
     background-color:rgba(248,249,250, 0.90) !important;
     padding: 0px 0px !important;
 }
 
 .nav-link {
     color: #914642;
+    padding: .2rem .4rem;
 }
 
 .nav-link:hover {
@@ -72,6 +86,16 @@ a.nav-1 {
     z-index: -1;
 }
 
+@media only screen and (max-width:500px) {
+    #flower-image-1 {
+        position: fixed;
+        top:-30px;
+        left: -140px;
+        transform: rotate(20deg); 
+        z-index: -1;
+    }
+}
+
 /* #flower-image-1:hover {
     position: absolute;
     left: -120px;   
@@ -84,6 +108,34 @@ a.nav-1 {
     transform: rotate(110deg);
     z-index: -1;
 }
+
+@media only screen and (max-width:500px) {
+    #flower-image-2 {
+        position: fixed;
+        right: -90px;
+        bottom: -130px;
+        transform: rotate(110deg);
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #flower-image-3 {
+        position: fixed;
+        right: -50px;
+        bottom: 580px;
+        z-index: -1;
+    }
+  }
+
+  @media only screen and (max-width: 601px) {
+    #flower-image-3 {
+        display: none;
+    }
+  }
+
+
+
 
 #page-header {
     height:20vh;
@@ -118,7 +170,17 @@ a.nav-1 {
 #rsvp-section {
     padding: 50px 0px;
     text-align: center;
+    height:90vh;
+}
+
+#details-section {
+    padding: 50px 0px;
+    text-align: center;
     height:100vh;
+}
+
+#wedding-details {
+    padding-top: 100px;
 }
 
 ::-webkit-input-placeholder {
@@ -153,7 +215,19 @@ a.nav-1 {
      font-family: 'Assistant', sans-serif !important;
      font-weight: 100 !important;
      font-size: 1.2rem !important;
+     border-radius: 0px !important;
  }
+
+ a {
+     color: lightblue;
+     text-decoration: lightblue !important;
+ }
+
+ a:hover {
+     color: #fff;
+ }
+
+
 
  @media only screen and (max-width: 400px) {
     input {
@@ -172,7 +246,7 @@ button {
      font-size: 1.2rem !important;
      color: #914642 !important;
      background-color: rgba(255,255,255, 0.9) !important;
-     
+     border-radius: 2px !important;
 }
 
 #rsvp_button {

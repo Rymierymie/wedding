@@ -13,10 +13,14 @@ $(document).ready(function(){
   $(".btn_fade").click(function(){
     $("#scroll-button").fadeOut();
   });
-  $(".btn_fade_2").click(function(){
+/*   $(".btn_fade_2").click(function(){
     $("#rsvp_button").fadeOut();
-  });
+  }); */
   $(".btn_fade_2").click(function(){
     $("#rsvp-form").fadeIn();
   });
+  $(".btn_fade_3").click(function(){
+    $("#wedding-details").fadeIn();
+  });
+
 });
