@@ -28,11 +28,13 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 399px) {
     h1 {
+        max-width: 250px;
         padding-top: 3vh;
     }
 }
+
 
 p {
     font-family: 'Assistant', sans-serif;
@@ -168,19 +170,19 @@ a.nav-1 {
 }
 
 #rsvp-section {
-    padding: 50px 0px;
+    padding-top: 15vh;
     text-align: center;
     height:90vh;
 }
 
 #details-section {
-    padding: 50px 0px;
+    padding-top: 15vh;
     text-align: center;
     height:100vh;
 }
 
 #wedding-details {
-    padding-top: 100px;
+    padding-top: 10vh;
 }
 
 ::-webkit-input-placeholder {
@@ -281,6 +283,38 @@ button {
   0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+
+.modal-body {
+    color: #914642;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: left !important;
+}
+
+.modal-header {
+    color: #914642;
+    font-family: 'Amatic SC', cursive;
+
+    padding: 1rem 1rem !important;
+}
+
+.modal-title {
+    font-size: 2rem !important;
+}
+
+.btn-primary {
+    border: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+span {
+    color: lightblue;
 }
 
 /* #flower-1 {
