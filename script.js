@@ -9,13 +9,18 @@
 
 
 
+
+/* 
+
+Removed these functions after just displaying the content from the beginning. 
+
 $(document).ready(function(){
   $(".btn_fade").click(function(){
     $("#scroll-button").fadeOut();
   });
-/*   $(".btn_fade_2").click(function(){
+  $(".btn_fade_2").click(function(){
     $("#rsvp_button").fadeOut();
-  }); */
+  });
   $(".btn_fade_2").click(function(){
     $("#rsvp-form").fadeIn();
   });
@@ -23,4 +28,4 @@ $(document).ready(function(){
     $("#wedding-details").fadeIn();
   });
 
-});
+}); */
