@@ -1,188 +1,80 @@
+
 body {
-    background-color: #914642;
+    background-color: #843f3c;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
     color: #ffffff;
-    /* overflow: hidden; */
 }
 
 
-/* #bg-layer-1 {
-    background-image: url('http://conversantm.com/VfJfnv/jXk5QKzXLo.png');
-    background-repeat: no-repeat;
-    background-position: right left;
-} */
-
-html {
+html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+.parent {
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
   }
+  
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    /* position: relative; */
+  }
+
+
+#invite_title {
+    position: fixed;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* background-color: #843f3c; */
+    z-index: 1;
+}
+
+section {
+    padding-top: 20vh;
+}
+
 
 h1 {
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    padding-top: 7vh;
-    position: fixed;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 2rem;
 }
 
-@media only screen and (min-width: 400px) {
-    h1 {
-        font-size: 3.5rem;
-    }
+.pointer {
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 399px) {
-    h1 {
-        max-width: 250px;
-        padding-top: 3vh;
-    }
+span {
+    color: #a0cbff;
+}
+
+a {
+    color: #a0cbff;
+    text-decoration: #a0cbff !important;
+}
+
+a:hover {
+    color: #fff;
 }
 
 
-p {
-    font-family: 'Assistant', sans-serif;
-    font-weight: 100;
-    font-size: 1.1rem;
-    text-align: center;
+#meta_p {
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+    color: #ffffff5e;
 }
 
-@media only screen and (min-width: 400px) {
-    p {
-        margin-bottom: 2vh;
-        font-size: 1.4rem;
-      /* background-color: lightblue; */
-    }
-  }
-
-nav {
-    font-family: 'Assistant', sans-serif !important;
-    font-weight: 100 !important;
-    font-size: 1.2rem !important;
-    bottom: 3vh !important;
-    width: 60vw !important;
-    left: 20vw !important;
-    border-radius: 1px;
-    background-color:rgba(248,249,250, 0.90) !important;
-    padding: 0px 0px !important;
-}
-
-.nav-link {
-    color: #914642;
-    padding: .2rem .4rem;
-}
-
-.nav-link:hover {
-    color: #ffffff;
-}
-
-a.nav-1 {
-    border-right: 1px solid rgba(145,70,66,0.80) !important;
-}
-
-/* #invite-text-block {
-    margin: 100px 0px;
-} */
-
-#flower-image-1 {
-    position: fixed;
-    top:-30px;
-    left: -80px;
-    transform: rotate(20deg); 
-    z-index: -1;
-}
-
-@media only screen and (max-width:500px) {
-    #flower-image-1 {
-        position: fixed;
-        top:-30px;
-        left: -140px;
-        transform: rotate(20deg); 
-        z-index: -1;
-    }
-}
-
-/* #flower-image-1:hover {
-    position: absolute;
-    left: -120px;   
-} */
-
-#flower-image-2 {
-    position: fixed;
-    right: -50px;
-    bottom: -30px;
-    transform: rotate(110deg);
-    z-index: -1;
-}
-
-@media only screen and (max-width:500px) {
-    #flower-image-2 {
-        position: fixed;
-        right: -90px;
-        bottom: -130px;
-        transform: rotate(110deg);
-        z-index: -1;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    #flower-image-3 {
-        position: fixed;
-        right: -50px;
-        bottom: 580px;
-        z-index: -1;
-    }
-  }
-
-  @media only screen and (max-width: 601px) {
-    #flower-image-3 {
-        display: none;
-    }
-  }
-
-
-
-
-#page-header {
-    height:20vh;
-}
-
-/*  #scroll-button {
-    position: fixed;
-    right: 45vw;
-    top: 90vh;
-}  */
-
-#rsvp_form_div {
-    text-align: center;
-    height: 10vh;
-}
-
-/* #scoll-button-div {
-    position: fixed;
-    right: 50vw;
-    top: 90vh;
-} */
-
-/* #rsvp_button {
-    position: fixed;
-} */
-
-#invite-info {
-    padding-bottom: 30vh;
-    padding-top:5vh;
-}
-
-#rsvp-section {
-    padding-top: 15vh;
-    text-align: center;
-    height:90vh;
-}
-
-#details-section {
-    padding-top: 15vh;
-    text-align: center;
-    height:100vh;
-}
-
-#wedding-details {
-    padding-top: 10vh;
+#no_padding_p {
+    margin-bottom: 0px;
 }
 
 ::-webkit-input-placeholder {
@@ -210,133 +102,65 @@ a.nav-1 {
     color: #ffffff !important;
  }
 
- input{
-     margin-bottom: 5vh;
-     background-color: #f8f9fa66 !important;
-     border: 0px !important;
-     font-family: 'Assistant', sans-serif !important;
-     font-weight: 100 !important;
-     font-size: 1.2rem !important;
-     border-radius: 0px !important;
- }
-
- a {
-     color: lightblue;
-     text-decoration: lightblue !important;
- }
-
- a:hover {
-     color: #fff;
- }
-
-
-
- @media only screen and (max-width: 400px) {
-    input {
-        margin-bottom: 1vh;
-      /* background-color: lightblue; */
-    }
-  }
-
- .input:focus {
-    box-shadow: 0 0 5px #e7bcba;
+input{
+    margin-bottom: 3vh;
+    background-color: #f8f9fa66 !important;
+    border: 0px !important;
+    font-size: 1.2rem !important;
+    border-radius: 0px !important;
 }
 
-button {
-     font-family: 'Assistant', sans-serif !important;
-     font-weight: 100 !important;
-     font-size: 1.2rem !important;
-     color: #914642 !important;
-     background-color: rgba(255,255,255, 0.9) !important;
-     border-radius: 2px !important;
+input:focus { 
+   /*  outline: none !important; */
+    border-color: rgb(255, 255, 255)!important;
+    box-shadow: 0 0 10px rgb(255, 255, 255)!important;
+    border-radius: 0px !important;
 }
-
-#rsvp_button {
-    position: fixed !important;
-    text-align: center !important;
-    left: 43vw;
-}
-
-#rsvp-form {
-    padding-top: 10vh;
-}
-
-/* a.anchor {
-    display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden;
-}
- */
-.elementToFadeInAndOut {
-    -webkit-animation: fadeinout 4s linear 1 forwards;
-    animation: fadeinout 4s linear 1 forwards;
-    animation-iteration-count: 2;
-}
-
-@-webkit-keyframes fadeinout {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-}
-@keyframes fadeinout {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-}
+/* textarea:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+} */
 
 
 .modal-body {
     color: #914642;
-    font-family: 'Assistant', sans-serif;
-    font-weight: 100;
     font-size: 1.2rem;
     text-align: left !important;
 }
 
 .modal-header {
     color: #914642;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Montserrat', sans-serif;
 
     padding: 1rem 1rem !important;
 }
 
 .modal-title {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
 }
 
-.btn-primary {
-    border: none !important;
+button {
+    font-size: 1.2rem !important;
+    color: #914642 !important;
+    background-color: rgba(255,255,255, 0.9) !important;
+    border-radius: 0px !important;
 }
 
-.pointer {
-    cursor: pointer;
+.modal-body a {
+    color: #3c5d85;
 }
 
-span {
-    color: lightblue;
+.modal-content {
+    border-radius: 0px;
 }
 
-/* #flower-1 {
-    width: 170px;
-    opacity: 0.95;
+.modal span {
+    color: #914642
 }
 
-#flower-2 {
-    width: 190px;
-    opacity: 0.95;
-} */
 
-/* 
-#l_and_r_gutter {
 
-    background-color: cornflowerblue;
-}
- */
-
- /* make keyframes that tell the start state and the end state of our object 
- used:
- https://codepen.io/fr33co/pen/xOBXGy*/
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { 
@@ -382,62 +206,74 @@ span {
     -moz-animation-delay: 1.6s;
     animation-delay: 1.6s;
   }
-  @-webkit-keyframes blowRight { from { transform: rotate(20deg); } to { transform: rotate(19deg); } }
-  @-moz-keyframes blowRight { from { transform: rotate(20deg); } to { transform: rotate(19deg); } }
-  @keyframes blowRight {
-      from {
-          transform: rotate(20deg);
-      }
-      to {
-          transform: rotate(19deg);
-      }
-  }
-
-  .blow-right {
-    -webkit-animation:blowRight ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:blowRight ease-in 1;
-    animation:blowRight ease-in 1;
-
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-
-    -webkit-animation-duration:0.5s;
-    -moz-animation-duration:0.5s;
-    animation-duration:0.5s;
-
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    animation-delay: 1.5s;
-  }
 
 
+  nav {
+    font-size: 1rem !important;
+    bottom: 3vh !important;
+    width: 90vw !important;
+    left: 5vw !important;
+    border-radius: 1px;
+    background-color:rgba(248,249,250, 0.90) !important;
+    padding: 0px 0px !important;
+}
 
-  @-webkit-keyframes blowLeft { from { transform: rotate(110deg); } to { transform: rotate(111deg); } }
-  @-moz-keyframes blowLeft { from { transform: rotate(110deg); } to { transform: rotate(111deg); } }
-  @keyframes blowLeft {
-      from {
-          transform: rotate(110deg);
-      }
-      to {
-          transform: rotate(111deg);
-      }
-  }
+.nav-link {
+    color: #914642;
+    padding: .2rem .4rem;
+}
 
-  .blow-left {
-    -webkit-animation:blowLeft ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:blowLeft ease-in 1;
-    animation:blowLeft ease-in 1;
+.nav-link:hover {
+    color: #ffffff;
+}
 
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
+a.nav-1 {
+    border-right: 1px solid rgba(145,70,66,0.80) !important;
+}
 
-    -webkit-animation-duration:0.5s;
-    -moz-animation-duration:0.5s;
-    animation-duration:0.5s;
+/* .nav-link.active {
+    border-radius: 0px !important;
+    background-color: #a0cbff !important;
+} */
 
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    animation-delay: 1.5s;
-  }
+/* a.active {
+    color: #fff;
+} */
+
+@media only screen and (min-width: 500px) {
+    h1 {
+        font-size: 3rem;
+    }
+    body {
+        font-size: 1.2rem;
+    }
+    #invite_title {
+        top: 50px;
+    }
+    section {
+        padding-top: 23vh;
+    }
+    nav {
+        width: 40vw !important;
+        left: 30vw !important;
+        font-size: 1.2rem!important;
+    }
+}
+
+
+#thanks_img {
+    padding-top: 30vh;
+}
+
+#thanks_title {
+    top: 10vh;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* background-color: #843f3c; */
+    z-index: 1;
+}
+
+input, select, textarea{
+    color: #fff!important;
+}
