@@ -1,4 +1,5 @@
 
+
 body {
     background-color: #843f3c;
     text-align: center;
@@ -111,16 +112,11 @@ input{
 }
 
 input:focus { 
-   /*  outline: none !important; */
     border-color: rgb(255, 255, 255)!important;
     box-shadow: 0 0 10px rgb(255, 255, 255)!important;
     border-radius: 0px !important;
 }
-/* textarea:focus { 
-    outline: none !important;
-    border-color: #719ECE;
-    box-shadow: 0 0 10px #719ECE;
-} */
+
 
 
 .modal-body {
@@ -166,7 +162,6 @@ button {
 @keyframes fadeIn { 
     from { 
         opacity:0; 
-        /* transform: rotate(0deg); */
     } 
     to 
     { 
@@ -231,16 +226,8 @@ a.nav-1 {
     border-right: 1px solid rgba(145,70,66,0.80) !important;
 }
 
-/* .nav-link.active {
-    border-radius: 0px !important;
-    background-color: #a0cbff !important;
-} */
 
-/* a.active {
-    color: #fff;
-} */
-
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 410px) {
     h1 {
         font-size: 3rem;
     }
@@ -248,15 +235,15 @@ a.nav-1 {
         font-size: 1.2rem;
     }
     #invite_title {
-        top: 50px;
+        top: 40px;
     }
     section {
-        padding-top: 23vh;
+        padding-top: 24vh;
     }
     nav {
-        width: 40vw !important;
-        left: 30vw !important;
-        font-size: 1.2rem!important;
+        width: 50vw !important;
+        left: 25vw !important;
+        font-size: 1.1rem!important;
     }
 }
 
