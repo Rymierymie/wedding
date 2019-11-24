@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #843f3c;
+    background-color: #914252;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -34,10 +34,18 @@ section {
 #invite_title {
     position: fixed;
     top: 5vh;
+    /* width: 300px; */
     left: 50%;
     transform: translate(-50%, 0);
-    /* background-color: #843f3c; */
     z-index: 1;
+}
+
+#invite_divide {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0.9;
 }
 
 section {
@@ -47,7 +55,7 @@ section {
 
 h1 {
     font-family: 'Cedarville Cursive', cursive;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .pointer {
@@ -107,7 +115,7 @@ input{
     margin-bottom: 3vh;
     background-color: #f8f9fa66 !important;
     border: 0px !important;
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
     border-radius: 0px !important;
 }
 
@@ -137,7 +145,7 @@ input:focus {
 }
 
 button {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
     color: #914642 !important;
     background-color: rgba(255,255,255, 0.9) !important;
     border-radius: 0px !important;
@@ -208,7 +216,7 @@ button {
     bottom: 3vh !important;
     width: 90vw !important;
     left: 5vw !important;
-    border-radius: 1px;
+    border-radius: 0px;
     background-color:rgba(248,249,250, 0.90) !important;
     padding: 0px 0px !important;
 }
@@ -227,9 +235,28 @@ a.nav-1 {
 }
 
 
+@media only screen and (min-width: 374px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    #invite_title {
+        top: 40px;
+    }
+    section {
+        padding-top: 24vh;
+    }
+    #invite_divide {
+        top: 80px;
+    }
+}
+
+
 @media only screen and (min-width: 410px) {
     h1 {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
     body {
         font-size: 1.2rem;
@@ -237,6 +264,11 @@ a.nav-1 {
     #invite_title {
         top: 40px;
     }
+
+    #invite_divide {
+        top: 90px;
+    }
+
     section {
         padding-top: 24vh;
     }
@@ -245,6 +277,13 @@ a.nav-1 {
         left: 25vw !important;
         font-size: 1.1rem!important;
     }
+}
+
+@media only screen and (min-width: 550px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
 }
 
 
