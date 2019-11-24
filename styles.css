@@ -246,7 +246,7 @@ a.nav-1 {
         top: 40px;
     }
     section {
-        padding-top: 24vh;
+        padding-top: 20vh;
     }
     #invite_divide {
         top: 80px;
@@ -302,4 +302,20 @@ a.nav-1 {
 
 input, select, textarea{
     color: #fff!important;
+}
+
+#rick {
+    position: fixed;
+    top: 20vh;
+    z-index: 0.9;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#heart {
+    position: fixed;
+    top: 6vh;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
