@@ -62,7 +62,7 @@
                     </section>
                     
                     <section id="rsvp">
-                        <form target="_self" onsubmit="return postToGoogle();" action="/thanks.html" class="text-center">
+                        <form target="_self" action="/thanks.html" class="text-center" id="rsvpForm">
                             <div class="form-group row justify-content-center">
                               <div class="col-sm-10">
                                 <input type="text" class="form-control input" id="nameField" name="entry.871409549" placeholder="Names of attendees">
@@ -89,12 +89,13 @@
                             </div>
                             <div class="form-group row justify-content-center">
                               <div class="col-sm-10">
-                                <input onclick="window.location.href='/thanks.html'" id="send" type="submit" name="attending" class="btn "></input>
+                                <input onclick="clearForm();" id="send" type="submit" name="attending" class="btn "></input>
                               </div>
                               <!-- <a href="#invite-info"><i class="fa fa-chevron-down btn_fade elementToFadeInAndOut fader" id="scroll-button" style="font-size:30px; color:#ffffff;"></i></a> -->
                             </div>
                     </form>
                             <script>
+                                    
 
                                     function postToGoogle() {
                                                     var field1 = $("#nameField").val();
@@ -110,11 +111,16 @@
                                                     });
                                                     
                                                     
+                                                    
                                                     /* console.log(field1) */
                                                     /* Stops the page from refreshing */
                                                     return false;
                                                 } 
-                                             
+                                    function clearForm() {
+                                      postToGoogle()
+                                      alert("Thanks!")
+                                      //document.getElementById("rsvpForm").reset();
+                                    }
                                     </script> 
                     </section>
 
