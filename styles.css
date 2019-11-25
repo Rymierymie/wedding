@@ -49,7 +49,7 @@ section {
 }
 
 section {
-    padding-top: 20vh;
+    padding-top: 105px;
 }
 
 
@@ -246,7 +246,7 @@ a.nav-1 {
         top: 40px;
     }
     section {
-        padding-top: 20vh;
+        padding-top: 120px;
     }
     #invite_divide {
         top: 80px;
@@ -270,7 +270,7 @@ a.nav-1 {
     }
 
     section {
-        padding-top: 24vh;
+        padding-top: 150px;
     }
     nav {
         width: 50vw !important;
