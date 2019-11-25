@@ -314,7 +314,7 @@ input, select, textarea{
 
 #heart {
     position: fixed;
-    top: 6vh;
+    top: 7.5vh;
     z-index: 1;
     left: 50%;
     transform: translate(-50%, 0);
