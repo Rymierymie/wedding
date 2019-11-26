@@ -319,3 +319,7 @@ input, select, textarea{
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+span#more {
+    text-decoration: underline !important;
+}
